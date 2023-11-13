@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Employee Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<style>
+    body {
+        background-image: url(images/phone.jpg);
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="center" id="employeeLoginMovedToCenter">
+        <div class="container" id="employeeLoginContainer">
+            <div class="card" id="employeeLoginCard">
+                <div class="card-body">
+                    <form>
+                        <h3>Employee Login</h3>
+                        <p>Use your organisation email and password to login.
+                        </p>
+                        <label for="employeeEmail">Email Address</label>
+                        <input id="employeeEmail" type="email" name="employeeEmail" required />
+                        <br><br>
+                        <label for="employeePassword">Password</label>
+                        <input id="employeePassword" type="password" name="employeePassword"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+                        <br><br>
+                        <button class="loginbtn" onclick="validateForm()">Login</button>
+                        <p>If you haven't created an account, click on the underlined link below.<br><a
+                                href="register-as-employee.html">Create an employee account</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            const employeeEmail = document.getElementById("employeeEmail");
+            const employeePassword = document.getElementById("employeePassword");
+            if (!employeeEmail.checkValidity() && !employeePassword.checkValidity() || !employeeEmail.checkValidity() || !employeePassword.checkValidity()) {
+                document.getElementById("employeeEmail").innerHTML = employeeEmail.validationMessage;
+                document.getElementById("employeePassword").innerHTML = employeePassword.validationMessage;
+            } else {
+                location.replace("stock-page.html");
+            }
+        }
+    </script>
+</body>
+
+</html>

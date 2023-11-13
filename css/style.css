@@ -1,0 +1,124 @@
+/* General rules for all documents to be applied
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Styling all UI components
+* Different IDs are used to identify each element accordingly
+* without affecting other webpages
+* This ensures consistency for different UI elements for IDs sharing
+* the same properties
+*/
+
+button.btn1 {
+    background-color: red;
+}
+
+button.btn1:hover {
+    background-color: crimson;
+}
+
+button.btn2 {
+    background-color: blueviolet;
+}
+
+button.btn2:hover {
+    background-color: rgb(132, 0, 255);
+}
+
+button.btn1,
+button.btn2 {
+    padding: 8px 12px;
+    width: 25%;
+    border: none;
+}
+
+button.loginbtn {
+    background-color: blueviolet;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 25%;
+}
+
+button.cancelbtn {
+    background-color: red;
+}
+
+button.cancelbtn:hover {
+    background-color: crimson;
+}
+
+button.regbtn {
+    background-color: blueviolet;
+}
+
+button.regbtn:hover {
+    background-color: rgb(132, 0, 255);
+}
+
+button.cancelbtn,
+button.regbtn {
+    font-size: 16px;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    width: 25%;
+}
+
+button.loginbtn:hover {
+    background-color: rgb(132, 0, 255);
+}
+
+#customerLoginContainer,
+#employeeLoginContainer,
+#customerRegContainer,
+#employeeRegContainer {
+    color: black;
+    padding: 20px 20px;
+}
+
+#customerLoginCard,
+#employeeLoginCard,
+#customerRegCard,
+#employeeRegCard {
+    background-color: rgb(148, 202, 219);
+    border: 1px solid black;
+}
+
+#customerLoginMovedToCenter,
+#employeeLoginMovedToCenter,
+#customerRegMovedToCenter,
+#employeeRegMovedToCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+input[type=email],
+input[type=password] {
+    border: 1px solid black;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 1px solid black;
+    width: 100%;
+}

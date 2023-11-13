@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script defer src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(images/phone.jpg);
+        background-size: cover;
+    }
+
+    h3 {
+        font-size: 40px;
+        padding: 10px;
+        top: 0;
+        background: blueviolet;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .container {
+        color: black;
+        left: 50%;
+        padding: 10px;
+    }
+
+    .card {
+        background-color: rgb(148, 202, 219);
+        border: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -75%);
+        transform: translate(-50%, -75%);
+    }
+
+    .btn1 {
+        background-color: red;
+    }
+
+    .btn1:hover {
+        background-color: crimson;
+    }
+
+    .btn2 {
+        background-color: blueviolet;
+    }
+
+    .btn2:hover {
+        background-color: rgb(132, 0, 255);
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 8px 12px;
+        width: 25%;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="center">
+        <h3 style="color: white">Welcome to the Team Protecht Shopping Website</h3>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">To get started with shopping, you will need to register to become our customer
+                        today! Click on the 'Login as Customer' button to get started.</p>
+                    <p class="card-text">If you are an employee to help improve the users' online shopping experience
+                        by providing customer support, you can get started right away! Click on the 'Login as Employee'
+                        button to get started.</p>
+                    <button class="btn1" id="customer" onclick="document.location='login-as-customer.html'"><b>Login as
+                            Customer</b></button>
+                    <button class="btn2" onclick="document.location='login-as-employee.html'"><b>Login as
+                            Employee</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
