@@ -157,9 +157,10 @@
 
     <div class="select-buttons">
         <button onclick="setTo()">Set To</button>
+        <span>OR</span>
         <button onclick="removeAmount()">Remove Amount</button>
+         <input type="number" class="integer-input" placeholder="Enter positive integer" min="0" step="1">
     </div>
-
     <script>
         function setTo() {
             // Implement SQL query for setting a value
