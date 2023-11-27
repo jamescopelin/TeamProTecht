@@ -137,6 +137,16 @@
         .select-buttons button {
             margin: 0 10px;
         }
+
+        .filtering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtering label, .filtering input, .filtering select {
+    margin: 0 10px;
+}
     </style>
 </head>
 
@@ -161,6 +171,26 @@
         <button onclick="removeAmount()">Remove Amount</button>
          <input type="number" class="integer-input" placeholder="Enter positive integer" min="0" step="1">
     </div>
+
+
+            <div class="filtering">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" class="filter-input" placeholder="Enter positive integer" min="0" step="1">
+            <select id="amountFilter">
+                <option value="=">Equal</option>
+                <option value="<">Less Than</option>
+                <option value=">">Greater Than</option>
+            </select>
+        </div >
+        <div class="filtering">
+            <label for="product">Product:</label>
+            <input type="text" id="product" class="filter-input">
+        </div>
+        <div class="filtering">
+            <label for="binLocation">Bin Location:</label>
+            <input type="text" id="binLocation" class="filter-input">
+
+        </div>
     <script>
         function setTo() {
             // Implement SQL query for setting a value
