@@ -128,10 +128,18 @@
         form input[type="submit"]:hover {
             background-color: #a19c9c;
         }
+        .select-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .select-buttons button {
+            margin: 0 10px;
+        }
     </style>
 </head>
 
-<body>
     <body>
     <div class="navbar">
         <!-- Menu Bar -->
@@ -147,7 +155,22 @@
         </ul>
     </div>
 
+    <div class="select-buttons">
+        <button onclick="setTo()">Set To</button>
+        <button onclick="removeAmount()">Remove Amount</button>
+    </div>
 
+    <script>
+        function setTo() {
+            // Implement SQL query for setting a value
+ 
+        }
+
+        function removeAmount() {
+            // Implement SQL query for removing an amount
+            
+        }
+    </script>
 </body>
 
 </html>
